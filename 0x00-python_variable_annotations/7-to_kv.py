@@ -2,10 +2,10 @@
 """Tuple of string and square of int/float"""
 
 
-from typing import Tuple
+from typing import Tuple, Union
 
 
-def to_kv(k: str, v: Tuple[int, float]) -> Tuple[str, float]:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """
     Args:
         k (str): String
@@ -13,4 +13,6 @@ def to_kv(k: str, v: Tuple[int, float]) -> Tuple[str, float]:
     Return:
         tuple: First element is a string and second float
     """
-    return (k, v**2)
+    ans: Tuple(str, Union[int, float])
+    ans = (k, v**2)
+    return (ans)
