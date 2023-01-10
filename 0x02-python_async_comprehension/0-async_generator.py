@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+""" Generate random numbers """
 import asyncio
 import random
 from typing import Generator
